@@ -15,7 +15,7 @@ from IOLibrary import FileOperations
 from TrainLibrary import Processing, TrainRecord, trainCommodity, trainOperator, GeoLocation, LoopLocation, direction
 
 
-def set_parameters(arguments):
+def setParameters(arguments):
     
     # Default parameters
     corridorlabel = "Gunnedah"
@@ -97,7 +97,7 @@ if __name__ == '__main__':
                  'Define corridor and analysis period:  AutoTrainProcessing(corridorLabel,fromDate, toDate)')
 
     
-    corridorlabel, dateRange = set_parameters(sys.argv)
+    corridorlabel, dateRange = setParameters(sys.argv)
     
 
     
@@ -111,6 +111,8 @@ if __name__ == '__main__':
 
     print (len(processTrainDataPoint))
     # Write the processTrainDataPoint back to the datawarehouse
+
+    print ('Corridor: ', corridorlabel)
     print ('Idx, Train Date,	Train ID,	Loco ID, PW_ratio, Operator,	Commodity,	Direction,	Kilometreage,	Speed,	Time,	Latitude,	Longitude,	Elevation,	'+
            'isLoop,	isTSR,	isGap,	Simulation Speed,	Simualtion Time,	Average Speed,	Average Time')
     for idx in range(len(100)):

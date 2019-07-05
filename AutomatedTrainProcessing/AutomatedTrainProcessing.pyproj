@@ -11,6 +11,9 @@
     <OutputPath>.</OutputPath>
     <Name>AutomatedTrainProcessing</Name>
     <RootNamespace>AutomatedTrainProcessing</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>"Hunter" "1/1/2018" "15/1/2018"</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
